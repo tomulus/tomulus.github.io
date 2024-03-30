@@ -19,6 +19,7 @@ body {
   right: 0;
   margin: auto;
   height: 310px;
+  padding-left: 20px;
 }
 
 a {
@@ -48,8 +49,8 @@ h2 strong {
 }
 
 .countdown {
-  width: auto;
-  margin: 0 auto;
+  width: 1000px;
+  margin: auto;
 }
 .countdown .bloc-time {
   float: left;
@@ -193,9 +194,10 @@ h2 strong {
 </head>
 <body>
 	<div class="wrap">  
+	  
 	  <h1>When's <strong>Ledge</strong></h1>
-
 	  <div class="countdown">
+
 		<div class="bloc-time days" data-init-value="21">
 		  <span class="count-title">Days</span>
 
@@ -322,7 +324,7 @@ var Countdown = {
       minutes: this.$el.find('.bloc-time.min .figure'),
       seconds: this.$el.find('.bloc-time.sec .figure') };
 
-	var countDownDate = new Date("Apr 01, 2024 08:30:00").getTime();
+	var countDownDate = new Date("Apr 20, 2024 10:00:00").getTime();
 	var now = new Date().getTime();
 	// Find the distance between now and the count down date
 	var distance = countDownDate - now;
